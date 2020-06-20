@@ -1,0 +1,221 @@
+.main {
+    margin: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+    border: 1px #DADADB solid;
+}
+
+.title {
+    text-indent: 2ex;
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 100%;
+    background: #F5F4F9;
+    border: 1px #DADADA solid;
+    border-radius: 5px;
+    color: #7D868A;
+    font-size: 20px;
+    line-height: 35px;
+}
+
+h2 {
+    line-height: 60px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+h2 span {
+    font-size: 24px;
+}
+
+#info {
+    width: 80%;
+    margin: 0 auto;
+    height: 35vw;
+    /*响应式布局方法 */
+}
+
+.half {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.half img {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+#like_number {
+    color: #C93F3B;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.detail {
+    text-indent: 2ex;
+    color: #010103;
+    line-height: 40px;
+    font-size: 24px;
+    border: 1px #D7D7D9 solid;
+    border-radius: 3px;
+    width: 100%;
+    margin-left: -1px;
+    border-top: 0px;
+}
+
+.detail_last {
+    text-indent: 2ex;
+    color: #010103;
+    line-height: 40px;
+    font-size: 24px;
+    border: 1px #D7D7D9 solid;
+    border-radius: 3px;
+    width: 100%;
+    margin-left: -1px;
+    border-top: 0px;
+    /* 防止边框重叠 */
+    border-bottom: 0px;
+}
+
+#collect_img {
+    height: 1em;
+    width: 1em;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+#collect {
+    margin: 0 auto;
+    background-color: #D2392B;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    border: 1px #BA4337 solid;
+    border-radius: 3px;
+    width: 70%;
+    height: 40px;
+}
+
+
+/* 比较宽时css */
+
+@media (min-width: 767px) {
+    #like_number {
+        color: #C93F3B;
+        font-size: 30px;
+        line-height: 50px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .detail {
+        text-indent: 2ex;
+        color: #010103;
+        line-height: 40px;
+        font-size: 24px;
+        border: 1px #D7D7D9 solid;
+        border-radius: 3px;
+        width: 100%;
+        margin-left: -1px;
+        border-top: 0px;
+    }
+    .detail_last {
+        text-indent: 2ex;
+        color: #010103;
+        line-height: 40px;
+        font-size: 24px;
+        border: 1px #D7D7D9 solid;
+        border-radius: 5px;
+        width: 100%;
+        margin-left: -1px;
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    #collect_img {
+        height: 1em;
+        width: 1em;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    #collect {
+        margin: 0 auto;
+        background-color: #D2392B;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border: 1px #BA4337 solid;
+        border-radius: 3px;
+        width: 70%;
+        height: 40px;
+    }
+}
+
+
+/* 比较窄时css */
+
+@media (max-width: 768px) {
+    #like_number {
+        color: #C93F3B;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bolder;
+    }
+    .detail {
+        text-indent: 2ex;
+        color: #010103;
+        line-height: 25px;
+        font-size: 12px;
+        border: 1px #D7D7D9 solid;
+        border-radius: 3px;
+        width: 100%;
+        margin-left: -1px;
+        border-top: 0px;
+    }
+    .detail_last {
+        text-indent: 2ex;
+        color: #010103;
+        line-height: 25px;
+        font-size: 12px;
+        border: 1px #D7D7D9 solid;
+        border-radius: 3px;
+        width: 100%;
+        margin-left: -1px;
+        border-top: 0px;
+        border-bottom: 0px;
+    }
+    #collect_img {
+        height: 1em;
+        width: 1em;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+    #collect {
+        margin: 0 auto;
+        background-color: #D2392B;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        border: 1px #BA4337 solid;
+        border-radius: 3px;
+        width: 70%;
+        height: 40px;
+    }
+}
+
+#text {
+    margin: auto;
+    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    width: 70%;
+    display: block;
+}

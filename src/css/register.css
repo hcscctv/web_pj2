@@ -1,0 +1,76 @@
+body {
+    background-color: #000;
+}
+
+h1 {
+    color: #fff;
+}
+
+p{
+    color: red;
+    display: inline;
+}
+
+a {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 60px;
+    text-align: center;
+    font-size: 30px;
+    /*字体大小*/
+    line-height: 60px;
+    color: #fff;
+    text-transform: uppercase;
+    /*字体大写*/
+    font-family: sans-serif;
+    box-sizing: border-box;
+    /*盒模型大小规则*/
+    background: linear-gradient( 90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    border-radius: 60px;
+    background-size: 400%;
+    z-index: 1;
+}
+
+a:hover {
+    animation: animate 8s linear infinite alternate;
+    /*动画: 名称 时间 线性 循环 播放完回退播放*/
+}
+
+@keyframes animate {
+    0% {
+        background-position: 0%;
+    }
+    50% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: 0%;
+    }
+}
+
+a::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    /*当设置对立的2个定位属性时，元素的大小将由对立的大小决定*/
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient( 90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    border-radius: 40px;
+    background-size: 400%;
+    filter: blur(20px);
+    /* 高斯模糊 */
+    opacity: 0;
+    transition: 1s;
+}
+
+a:hover::before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+}

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/php/Browse.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php/HomePage.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php/details.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php/favor.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php/login.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php/my_photo.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/address.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/checkUsername.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/collect.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/delete_collect.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/home_page_refresh.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/img_show.php" dialect="GenericSQL" />
+    <file url="file://$PROJECT_DIR$/src/php_hidden/register.php" dialect="GenericSQL" />
+  </component>
+</project>

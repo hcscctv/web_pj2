@@ -1,0 +1,165 @@
+#pics img {
+    width: 100%;
+    height: 75vw;
+    z-index: -1;
+}
+
+.hot_image_area {
+    text-align: center;
+}
+
+.hot_image_area div.hot_image {
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    background: #C0C0C0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+.hot_image_area img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.hot_image_area p.image_title {
+    text-align: left;
+    font-size: 20px;
+}
+
+.hot_image_area p.image_description {
+    color: #808080;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    width: 100%;
+    font-size: 12px;
+    text-overflow: ellipsis;
+}
+
+.float_button {
+    z-index: 99;
+    position: fixed;
+    /* 保持在右下角 */
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+}
+
+.float_button #back_to_top {
+    margin-top: 20px;
+}
+
+.float_button img {
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+.float_button img:hover {
+    background: gray;
+}
+
+.slidershow {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.navigaion {
+    position: relative;
+    left: 50%;
+    margin-top: -70px;
+    display: flex;
+}
+
+.bar {
+    transform: translateX(-200%);
+    width: 50px;
+    height: 10px;
+    border: 2px solid #FFF8DC;
+    margin: 0.375rem;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.bar:hover {
+    background-color: #FFF8DC;
+}
+
+input[name="r"] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides {
+    width: 1000%;
+    height: 100%;
+    display: flex;
+}
+
+.slide {
+    width: 10%;
+    transition: 1.5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked~.s1 {
+    margin-left: 0;
+}
+
+#r2:checked~.s1 {
+    margin-left: -10%;
+}
+
+#r3:checked~.s1 {
+    margin-left: -20%;
+}
+
+#r4:checked~.s1 {
+    margin-left: -30%;
+}
+
+#footer {
+    width: 100%;
+    background-color: black;
+}
+
+#footer a {
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#footer_left {
+    width: 70%;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+}
+
+#footer_right {
+    width: 28%;
+    float: right;
+}
+
+#footer_right img {
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-right: 100px;
+}

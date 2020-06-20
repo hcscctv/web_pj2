@@ -1,0 +1,104 @@
+nav {
+    background-color: black;
+    width: 100%;
+    min-width: 600px;
+    height: 1.5em;
+    font-size: 1.5em;
+    z-index: 1000000;
+}
+
+nav img {
+    height: 1.5em;
+    width: 1.5em;
+}
+
+nav li:hover {
+    background-color: dimgray;
+}
+
+nav li.this {
+    background-color: #222222;
+}
+
+nav li {
+    float: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: white;
+    margin-top: 0px;
+    height: 1.5em;
+    text-align: center;
+    transition: .8s;
+}
+
+nav li#logo {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+nav #account {
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+    clear: right;
+}
+
+#account:hover {
+    float: right;
+}
+
+#account:hover #dropdown {
+    margin-top: 8px;
+    position: absolute;
+    display: block;
+    /* 下拉显示 */
+    margin-right: 0px;
+    z-index: 1000;
+    float: right;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.15);
+}
+
+nav ul#dropdown {
+    border: 1px grey solid;
+    border-radius: 10px;
+    display: none;
+    /* 平时隐藏 */
+}
+
+nav ul#dropdown li {
+    border-radius: 10px;
+    display: block;
+    color: black;
+    float: none;
+    text-align: left;
+    font-size: 16px;
+    background-color: white;
+    transition: .8s;
+}
+
+nav ul#dropdown li:hover {
+    background-color: rgba(125, 147, 243, 0.342);
+    border: 1px grey solid;
+    font-weight: bolder;
+    color: white;
+}
+
+nav ul#dropdown li:hover a {
+    color: white;
+}
+
+nav ul#dropdown li:hover img {
+    filter: invert(100%);
+    /* 反色 */
+}
+
+nav ul#dropdown img {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+}
+
+#dropdown a {
+    color: black;
+    transition: .8s;
+}

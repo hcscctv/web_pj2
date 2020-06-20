@@ -1,0 +1,209 @@
+#left {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    /* 固定于左边 */
+}
+
+#right {
+    height: 100%;
+    margin-left: 320px;
+    margin-top: 20px;
+}
+
+.main {
+    margin: 30px;
+    border-radius: 5px;
+    /* 圆角 */
+    border: 1px #DADADB solid;
+}
+
+#filter_result li{
+    display: inline-block;
+    width: 300px;
+    height: 250px;
+    padding: 15px 15px;
+    margin: 10px 10px;
+    background: #C0C0C0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .5);
+}
+
+#filter_result li img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.title {
+    text-indent: 2ex;
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 100%;
+    background: #F5F4F9;
+    border: 1px #DADADA solid;
+    border-radius: 5px;
+    color: #7D868A;
+    font-size: 16px;
+    line-height: 30px;
+    /*行高*/
+}
+
+input[type="text"] {
+    border: none;
+    font-size: 16px;
+    border-right: 1px #DADADA solid;
+    line-height: 20px;
+}
+
+#filter_input {
+    width: 70%;
+    display: inline-block;
+}
+
+input[type="text"] {
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+}
+
+#filter_button {
+    width: 28%;
+    border-left: 1px #DADADA solid;
+    display: inline-block;
+}
+
+#filter_button img {
+    height: 20px;
+    width: 20px;
+    margin: auto;
+}
+
+#filter {
+    width: 100%;
+}
+
+.choice,
+.choice_last {
+    cursor: pointer;
+}
+
+.choice,
+.filter_details {
+    text-indent: 2ex;
+    /* 开头空两格 */
+    color: #010103;
+    line-height: 30px;
+    border: 1px #D7D7D9 solid;
+    border-radius: 5x;
+    width: 100%;
+    margin-left: -1px;
+    border-top: 0px;
+}
+
+#filter_result {
+    color: #010103;
+    line-height: 30px;
+    border: 1px #D7D7D9 solid;
+    border-radius: 3px;
+    width: 100%;
+    margin-left: -1px;
+    border-top: 0px;
+    border-bottom: 0px;
+}
+
+#page_number span {
+    margin-left: 10px;
+}
+
+#page_number span#active {
+    text-decoration: underline;
+}
+
+select {
+    margin: 8px;
+    width: 10em;
+    height: 2em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    vertical-align: middle;
+    border: 1px solid #e9e9e9;
+    border-radius: 0.2em;
+    border-radius: 0.2em;
+    box-shadow: inset 0 0 3px #a0a0a0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* 不像select */
+    font-size: 1.2em;
+    color: #000099;
+    cursor: pointer;
+}
+
+option {
+    font-size: 1em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+}
+
+option[selected] {
+    font-weight: bold
+}
+
+option:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+select:hover {
+    color: #101010;
+    border: 1px solid #cdcdcd;
+}
+
+select:focus {
+    box-shadow: 0 0 2px 1px #404040;
+}
+
+button {
+    width: 10em;
+    text-align: center;
+    background-image: linear-gradient(#6CC967, #5BA14E);
+    /* 上到下渐变 */
+    border: 1px #4B8F4B solid;
+    border-radius: 5px;
+    height: 2em;
+    font-size: 1.2em;
+    color: white;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* 悬浮效果 */
+
+button:hover {
+    background-image: linear-gradient(#5BA14E, #6CC967);
+}
+
+table {
+    margin: 10px;
+}
+
+td img {
+    margin: 0;
+    width: 75%;
+    height: 10vw;
+    object-fit: cover;
+    /* 图片自动裁减 */
+    padding: 5px;
+}
+
+#page_number {
+    color: #82A7E8;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    cursor: context-menu;
+    /* 鼠标样式 */
+}
+
+#page_number a{
+    color: #82A7E8;
+}

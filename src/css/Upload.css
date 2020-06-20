@@ -1,0 +1,145 @@
+#main {
+    margin: 30px;
+    border-radius: 3px;
+    border: 1px #DADADB solid;
+}
+
+#title {
+    text-indent: 2ex;
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 100%;
+    background: #F5F4F9;
+    border: 1px #DADADA solid;
+    border-radius: 3px;
+    color: #7D868A;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#img0 {
+    margin: auto;
+    padding-top: 1rem;
+    width: 30rem;
+    height: 20rem;
+    /* 自裁减 */
+}
+
+#file {
+    text-align: center;
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(#6CC967, #5BA14E);
+    border: 1px #4B8F4B solid;
+    border-radius: 3px;
+    height: 45px;
+    color: white;
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.15);
+}
+
+#file:hover {
+    background-image: linear-gradient(#5BA14E, #6CC967);
+}
+
+img[src=""],
+img:not([src]) {
+    opacity: 0;
+}
+
+
+/* 无图片隐藏 */
+
+#details {
+    width: 100%;
+    display: block;
+    position: absolute;
+}
+
+.detail_input {
+    border: 1px #828284 solid;
+    width: 90%;
+    border-radius: 3px;
+    margin-left: 5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+label{
+    margin-left: 4em;
+}
+textarea {
+    resize: none;
+    overflow: scroll;
+}
+
+form button {
+    width: 10%;
+    font-size: 25px;
+    text-align: center;
+    background-image: linear-gradient(#6CC967, #5BA14E);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.15);
+    border: 1px #4B8F4B solid;
+    border-radius: 3px;
+    height: 40px;
+    color: white;
+    margin-left: 5%;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-image: linear-gradient(#5BA14E, #6CC967);
+}
+
+.fileinput-button {
+    position: absolute;
+    width: 28%;
+    margin-top: 10px;
+    margin-left: 34.5%;
+    display: block;
+    overflow: hidden;
+    /* 隐藏自带按钮 */
+}
+
+.fileinput-button button {
+    width: 100%;
+    text-align: center;
+    background-image: linear-gradient(#6CC967, #5BA14E);
+    box-shadow: 0px 4px 2px 0px rgba(0, 0, 0, 0.15);
+    border: 1px #4B8F4B solid;
+    border-radius: 3px;
+    height: 50px;
+    font-size: 20px;
+    color: white;
+}
+
+.fileinput-button button:hover {
+    background-image: linear-gradient(#5BA14E, #6CC967);
+}
+
+.fileinput-button input {
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    top: 20px;
+    opacity: 0;
+    font-size: 20000px;
+}
+select {
+    margin: 8px;
+    width: 10em;
+    height: 2em;
+    padding: 0.2em 0.4em 0.2em 0.4em;
+    vertical-align: middle;
+    border: 1px solid #e9e9e9;
+    border-radius: 0.2em;
+    border-radius: 0.2em;
+    box-shadow: inset 0 0 3px #a0a0a0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* 不像select */
+    font-size: 1.2em;
+    color: #000099;
+    cursor: pointer;
+}
