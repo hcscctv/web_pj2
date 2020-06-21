@@ -26,9 +26,9 @@ function decode($str){
     return base64_decode($str);
 }
 
-function hashsalt($password, $username)
+function hashsalt($password, $salt)
 {
-    return sha1(sha1($password) . $username);
+    return sha1(sha1($password) . $salt);
 }
 
 

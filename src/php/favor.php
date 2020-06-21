@@ -60,7 +60,7 @@
 
         $uid = mysqlDo("select UID from traveluser where UserName='$username'")[0]['UID'];
         $details = mysqlDo("select ImageID from travelimagefavor where UID='$uid'");
-        $detail_sum = sizeof($details);
+        if($details != null)$detail_sum = sizeof($details);
         $details = mysqlDo("select ImageID from travelimagefavor where UID='$uid' limit 0" . $page_start . ",5");
         if ($details == null) {
             echo "find some picture you like";

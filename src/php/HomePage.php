@@ -107,19 +107,17 @@
     <img src="../../img/refresh.png" title="刷新" id="refresh_button" class="refresh_button">
     <script>
         $(function () {
-            //初始化数据
             let url = '../php_hidden/home_page_refresh.php'; //后台地址
             $("#refresh_button").click(function () {
-                //发送一个post请求
                 $.ajax({
                     type: 'post',
                     url: url,
                     data: {key: 1},
                     dataType: 'json',
-                    success: function (data) { //请求成功回调函数
-                        let status = data.status; //获取返回值
+                    success: function (data) {
+                        let status = data.status;
                         let details = data.data;
-                        if (status == 200) { //判断状态码，200为成功
+                        if (status == 200) {
                             hotimages = document.getElementsByClassName("hot_image");
                         }
                         for (let i = 0; i < 12; i++) {
